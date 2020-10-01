@@ -54,6 +54,9 @@ namespace Acme.BookStore
             {
                 options.MapCodeNamespace("BookStore", typeof(BookStoreResource));
             });
+
+            
+
         }
     }
 }
