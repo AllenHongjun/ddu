@@ -24,6 +24,7 @@ namespace Acme.BookStore.Books
         public async Task Should_Get_List_Of_Books()
         {
             //Act
+            // Cat.OpenCourse
             // 每次一有节假日。查的严利益点。这个panda vpn 就不好用了。
             var result = await _bookAppService.GetListAsync(
                 new PagedAndSortedResultRequestDto()

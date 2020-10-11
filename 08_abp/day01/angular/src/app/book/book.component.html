@@ -1,3 +1,34 @@
+<!-- dotnet
+C# 代码生成工具
+一套好用的UI
+功能自己开发。
+cs 学习路线表
+dotnet 学习资料
+
+适合自己的通用后台
+  - 权限
+  - 日志
+  - 有一套UI的脚手架 熟悉使用。
+  - 系统设置
+  - 用户管理
+  - 角色 权限管理
+  -
+开发一个集成各种基础功能的项目。。使用起来会比较方便。
+  - 支付接口
+  - 授权登录
+  - 导入导出
+  - 上传下载
+  - 发送邮件
+  - 发送短信
+  - 图片处理二维码
+  - 定时任务管理。
+  - 实时通讯和推送 聊天
+  - 各种工具类库。。
+- 项目容易升级。
+全部都是开源的。
+-->
+
+
 <div class="card">
   <div class="card-header">
     <div class="row">
@@ -8,10 +39,12 @@
 
         <!-- Add the "new book" button here -->
         <div class="text-lg-right pt-2">
-          <button id="create" class="btn btn-primary" type="button" (click)="createBook()">
+          <!-- Add the abpPermission directive -->
+          <button abpPermission="BookStore.Books.Create" id="create" class="btn btn-primary" type="button" (click)="createBook()">
             <i class="fa fa-plus mr-1"></i>
-            <span>{{ "::NewBook" | abpLocalization }}</span>
+            <span>{{ '::NewBook' | abpLocalization }}</span>
           </button>
+
         </div>
 
       </div>
@@ -28,11 +61,11 @@
               <i class="fa fa-cog mr-1"></i>{{ '::Actions' | abpLocalization }}
             </button>
             <div ngbDropdownMenu>
-              <button ngbDropdownItem (click)="editBook(row.id)">
+              <button abpPermission="BookStore.Books.Edit" ngbDropdownItem (click)="editBook(row.id)">
                 {{ '::Edit' | abpLocalization }}
               </button>
                <!-- add the Delete button -->
-              <button ngbDropdownItem (click)="delete(row.id)">
+              <button abpPermission="BookStore.Books.Delete" ngbDropdownItem (click)="delete(row.id)">
                 {{ '::Delete' | abpLocalization }}
               </button>
             </div>
