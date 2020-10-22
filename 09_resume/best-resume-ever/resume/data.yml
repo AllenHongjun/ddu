@@ -1,0 +1,96 @@
+/* #*/ export const PERSON = `
+name:
+  first: 洪
+  middle:
+  last: 俊裕
+about: 您好,我大学专业是电气自动化专业，从事.net开发4年多，生鲜行业1年半。工作内容主要使用asp.net相关的技术做一些web后端的开发，使用的技术有，Linq,EF,webapi,存储过程，autofoc等，了解和使用过一些金蝶ERP的接口。现在的公司是生鲜相关，商品接口日浏览数量有10W左右。未来我期望能找一个大一点公司，积累一些高并发，微服务相关的工作经验。
+
+position: .NET开发工程师
+
+birth:
+  year: 1991
+  location: 浙江 金华
+
+experience:
+- company: 虾笨鲜生
+  position: .NET开发
+  timeperiod: 2019.03-至今
+  description:  虾笨是金华本地的一家生鲜电商公司。员工有100多。3个前置仓覆盖整个金华市区； 作为.net开发加入技术部。团队人数10人左右。通过维护有团购,c端两个平台。日订单量有1000+； 负责C端平台的日常维护，按照需求开发新的功能。包后台新模块功能开发，api接口开发，第三方sdk的对接等； 工作期间完成了老后台主要模块的改版（从webform该从vue前后端分离）;活动模块开发和完善（活动内容和各项参数都可配置）;商家支付模块功能开发等。
+  website: https://www.xiaben.com/
+
+- company: 大通网络
+  position: .NET开发
+  timeperiod: 2016.07-2018.11
+  description: 负责.net程序相关功能的开发 .接口数据的界面展示。微信公众号，小程序相关接口调试。前端网页效果制作，js代码编写。
+  website: http://www.39y.com/
+
+- company: 微赢科技
+  position: 软件测试
+  timeperiod: 2015.04-2016.07
+  description: 刚刚入门，一开始先测试软件功能。开发一些简单的js功能。html5小游戏功能 修改。企业网站制作。学习系统功能开发。
+  website: https://xianchang.vdcom.cn
+
+
+education:
+- degree: 宁波工程学院
+  timeperiod: 2009.09-2013.06
+  description: 电气工程及其自动化专业。专业是以电力为主，也涉及一些计算机技术的课程。比如C语言。数据库。C#编程。微机原理等。
+  website: https://www.nbut.edu.cn/
+
+- degree: 浙师大附中
+  timeperiod: 2006.09-2009.06
+  website: https://baike.baidu.com/item/%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E4%B8%AD%E5%AD%A6/543330?fromtitle=%E6%B5%99%E5%B8%88%E5%A4%A7%E9%99%84%E4%B8%AD&fromid=11256888&fr=aladdin
+
+# skill level goes 0 to 100
+skills:
+- name: ASP.NET mvc
+  level: 85
+- name: WebAPI
+  level: 85
+- name: Singal
+  level: 75
+- name: SQLserver
+  level: 85
+- name: Mysql
+  level: 75
+- name: Vue
+  level: 70
+knowledge: 同时对java的技术栈也有一些了解
+
+projects:
+- name: 虾笨鲜生
+  platform: Vue
+  timeperiod: February 2016
+  description: 生鲜电商平台。b2c模式。
+  url: https://www.xiaben.com/
+
+- name: 39y 游戏中心
+  platform: asp.net
+  timeperiod: February 2016
+  description: 开发辅助游戏中使用的相关接口包括 微信登录。微信支付，支付宝支付，兑换码，抽奖活动等
+  url: http://www.39y.com/
+
+hobbies:
+- name: 39y 游戏中心
+  iconClass: fa fa-gamepad
+  url: https://www.39y.com/
+
+- name: Drawing
+  iconClass: fa fa-pencil
+  url: https://example.com
+
+# contributions:
+# - name: best-resume-ever
+#   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
+#   url: https://github.com/salomonelli/best-resume-ever
+
+contact:
+  email: hongjy1991@gmail.com
+  phone: 15958456864
+  street: 婺城区胜利北街715号西201
+  city: 金华
+  website: http://www.hongjy.cn
+  github: AllenHongjun
+# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
+lang: cn
+`
