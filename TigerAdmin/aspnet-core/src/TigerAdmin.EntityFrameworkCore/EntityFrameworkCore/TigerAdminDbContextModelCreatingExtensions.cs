@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TigerAdmin.Books;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace TigerAdmin.EntityFrameworkCore
 {
@@ -17,6 +19,14 @@ namespace TigerAdmin.EntityFrameworkCore
             //    b.ConfigureByConvention(); //auto configure for the base class props
             //    //...
             //});
+
+            builder.Entity<Book>(b =>
+            {
+                b.ToTable(TigerAdminConsts.DbTablePrefix + "Books",
+                          TigerAdminConsts.DbSchema);
+                b.ConfigureByConvention(); //auto configure for the base class props
+                b.Property(x => x.Name).IsRequired().HasMaxLength(128);
+            });
         }
     }
 }

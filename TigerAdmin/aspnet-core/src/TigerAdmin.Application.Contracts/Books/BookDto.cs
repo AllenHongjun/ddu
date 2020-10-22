@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Volo.Abp.Domain.Entities.Auditing;
+using Volo.Abp.Application.Dtos;
 
 namespace TigerAdmin.Books
 {
-    public class Book:AuditedAggregateRoot<Guid>
+    public class BookDto:AuditedEntityDto<Guid>
     {
         public string Name { get; set; }
 

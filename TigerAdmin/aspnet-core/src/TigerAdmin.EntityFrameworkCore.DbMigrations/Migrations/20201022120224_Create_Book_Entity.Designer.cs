@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TigerAdmin.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
@@ -10,9 +11,10 @@ using Volo.Abp.EntityFrameworkCore;
 namespace TigerAdmin.Migrations
 {
     [DbContext(typeof(TigerAdminMigrationsDbContext))]
-    partial class TigerAdminMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201022120224_Create_Book_Entity")]
+    partial class Create_Book_Entity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -69,7 +71,7 @@ namespace TigerAdmin.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AppBooks");
+                    b.ToTable("Book");
                 });
 
             modelBuilder.Entity("Volo.Abp.AuditLogging.AuditLog", b =>
