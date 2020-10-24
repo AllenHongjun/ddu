@@ -79,12 +79,12 @@ export const constantRoutes = [
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
-        meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
+        meta: { title: '主页', icon: 'dashboard', affix: true }
       }
     ]
   },
   {
-    path: '/documentation',
+    path: '/文档',
     component: Layout,
     children: [
       {
@@ -95,19 +95,19 @@ export const constantRoutes = [
       }
     ]
   },
-  {
-    path: '/guide',
-    component: Layout,
-    redirect: '/guide/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/guide/index'),
-        name: 'Guide',
-        meta: { title: 'Guide', icon: 'guide', noCache: true }
-      }
-    ]
-  },
+  // {
+  //   path: '/guide',
+  //   component: Layout,
+  //   redirect: '/guide/index',
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       component: () => import('@/views/guide/index'),
+  //       name: 'Guide',
+  //       meta: { title: 'Guide', icon: 'guide', noCache: true }
+  //     }
+  //   ]
+  // },
   {
     path: '/profile',
     component: Layout,
@@ -136,7 +136,7 @@ export const asyncRoutes = [
     alwaysShow: true, // will always show the root menu
     name: 'Permission',
     meta: {
-      title: 'Permission',
+      title: '权限',
       icon: 'lock',
       roles: ['admin', 'editor'] // you can set roles in root nav
     },
@@ -160,11 +160,20 @@ export const asyncRoutes = [
         }
       },
       {
+        path: 'user',
+        component: () => import('@/views/permission/user'),
+        name: 'user',
+        meta: {
+          title: '用户',
+          roles: ['admin']
+        }
+      },
+      {
         path: 'role',
         component: () => import('@/views/permission/role'),
         name: 'RolePermission',
         meta: {
-          title: 'Role Permission',
+          title: '角色',
           roles: ['admin']
         }
       }
