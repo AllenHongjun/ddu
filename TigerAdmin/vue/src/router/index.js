@@ -176,6 +176,15 @@ export const asyncRoutes = [
           title: '角色',
           roles: ['admin']
         }
+      },
+      {
+        path: 'security-log',
+        component: () => import('@/views/permission/security-log'),
+        name: 'SecurityLog',
+        meta: {
+          title: '系统日志',
+          roles: ['admin']
+        }
       }
     ]
   },
