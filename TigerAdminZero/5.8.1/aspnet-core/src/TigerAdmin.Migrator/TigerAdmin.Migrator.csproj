@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>TigerAdmin.Migrator</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>TigerAdmin.Migrator</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="appsettings.json;log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.Castle.Log4Net" Version="5.13.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TigerAdmin.Core\TigerAdmin.Core.csproj" />
+    <ProjectReference Include="..\TigerAdmin.EntityFrameworkCore\TigerAdmin.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

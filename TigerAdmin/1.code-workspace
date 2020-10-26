@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\blog"
+		},
+		{
+			"path": "angular"
+		},
+		{
+			"path": "vue"
+		},
+		{
+			"path": "vue-tiger"
+		}
+	],
+	"settings": {}
+}
