@@ -16,6 +16,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="wwwroot\pages\alan\assets\fonts\Flaticon.svg" />
+    <None Include="wwwroot\pages\alan\assets\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\pages\alan\assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\pages\alan\assets\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\pages\alan\assets\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\pages\alan\assets\fonts\Linearicons-Free.svg" />
+    <None Include="wwwroot\pages\alan\assets\fonts\Linearicons-Free.woff2" />
+    <None Include="wwwroot\pages\alan\assets\js\bootsnav.js" />
+    <None Include="wwwroot\pages\alan\assets\js\bootstrap.min.js" />
+    <None Include="wwwroot\pages\alan\assets\js\custom.js" />
+    <None Include="wwwroot\pages\alan\assets\js\jquery.appear.js" />
+    <None Include="wwwroot\pages\alan\assets\js\jquery.js" />
+    <None Include="wwwroot\pages\alan\assets\js\jquery.sticky.js" />
+    <None Include="wwwroot\pages\alan\assets\js\owl.carousel.min.js" />
+    <None Include="wwwroot\pages\alan\assets\js\progressbar.js" />
+    <None Include="wwwroot\pages\jd\fonts\icomoon.svg" />
+    <None Include="wwwroot\pages\nav\assets\css\fonts\elusive\font\elusive.svg" />
+    <None Include="wwwroot\pages\nav\assets\css\fonts\fontawesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\pages\nav\assets\css\fonts\glyphicons\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\pages\nav\assets\css\fonts\linecons\font\linecons.svg" />
+    <None Include="wwwroot\pages\nav\assets\css\fonts\meteocons\font\meteocons.svg" />
+    <None Include="wwwroot\pages\nav\assets\js\bootstrap.min.js" />
+    <None Include="wwwroot\pages\nav\assets\js\joinable.js" />
+    <None Include="wwwroot\pages\nav\assets\js\jquery-1.11.1.min.js" />
+    <None Include="wwwroot\pages\nav\assets\js\lozad.js" />
+    <None Include="wwwroot\pages\nav\assets\js\resizeable.js" />
+    <None Include="wwwroot\pages\nav\assets\js\TweenMax.min.js" />
+    <None Include="wwwroot\pages\nav\assets\js\xenon-api.js" />
+    <None Include="wwwroot\pages\nav\assets\js\xenon-custom.js" />
+    <None Include="wwwroot\pages\nav\assets\js\xenon-toggles.js" />
+    <None Include="wwwroot\pages\nav\assets\webstack_logos.sketch" />
+    <None Include="wwwroot\pages\nav\CNAME" />
+    <None Include="wwwroot\pages\nav\LICENSE" />
+    <None Include="wwwroot\pages\nav\README.md" />
+    <None Include="wwwroot\pages\split\js\webflow.js" />
+    <None Include="wwwroot\pages\案例素材\云道首页\新版首页.psd" />
+    <None Include="wwwroot\pages\案例素材\学成在线\学成网职业规划.psd" />
+    <None Include="wwwroot\pages\案例素材\学成在线\学成网课程列表页.psd" />
+    <None Include="wwwroot\pages\案例素材\学成在线\学成网首页.psd" />
     <None Update="Dockerfile">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

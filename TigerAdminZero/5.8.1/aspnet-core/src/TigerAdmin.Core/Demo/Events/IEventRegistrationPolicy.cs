@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using TigerAdmin.Authorization.Users;
 
 namespace TigerAdmin.Demo.Events
@@ -11,6 +12,6 @@ namespace TigerAdmin.Demo.Events
         /// <summary>
         /// Checks if given user can register to <see cref="@event"/> and throws exception if can not.
         /// </summary>
-        System.Threading.Tasks.Task CheckRegistrationAttemptAsync(Event @event, User user);
+        Task CheckRegistrationAttemptAsync(Event @event, User user);
     }
 }

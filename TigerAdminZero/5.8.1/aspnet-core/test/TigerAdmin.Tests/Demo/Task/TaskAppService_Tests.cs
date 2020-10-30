@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using TigerAdmin.Demo.Task;
+using TigerAdmin.Demo;
 
 namespace TigerAdmin.Tests.Demo.Task
 {

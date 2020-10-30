@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using TigerAdmin.Demo.Task.Dto;
 
-namespace TigerAdmin.Demo.Task
+
+namespace TigerAdmin.Demo
 {
     public interface ITaskAppService:IApplicationService
     {

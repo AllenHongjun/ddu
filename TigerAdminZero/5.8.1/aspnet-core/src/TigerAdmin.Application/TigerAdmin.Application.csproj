@@ -11,6 +11,11 @@
     <RootNamespace>TigerAdmin</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Demo\Task\**" />
+    <EmbeddedResource Remove="Demo\Task\**" />
+    <None Remove="Demo\Task\**" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\TigerAdmin.Core\TigerAdmin.Core.csproj" />
   </ItemGroup>
 </Project>

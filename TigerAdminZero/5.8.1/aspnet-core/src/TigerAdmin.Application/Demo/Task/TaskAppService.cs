@@ -7,9 +7,9 @@ using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Text;
 using System.Threading.Tasks;
-using TigerAdmin.Demo.Task.Dto;
+using TigerAdmin.Demo;
 
-namespace TigerAdmin.Demo.Task
+namespace TigerAdmin.Demo
 {
     public class TaskAppService : TigerAdminAppServiceBase, ITaskAppService
     {

@@ -20,7 +20,8 @@ namespace TigerAdmin.Web.Host.Controllers
 
         public IActionResult Index()
         {
-            return Redirect("/swagger");
+            return Redirect("pages/split/index.html");
+            //return Redirect("/swagger");
         }
 
         /// <summary>

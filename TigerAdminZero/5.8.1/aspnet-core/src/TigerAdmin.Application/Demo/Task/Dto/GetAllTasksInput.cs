@@ -1,4 +1,4 @@
-﻿namespace TigerAdmin.Demo.Task
+﻿namespace TigerAdmin.Demo
 {
     public class GetAllTasksInput
     {

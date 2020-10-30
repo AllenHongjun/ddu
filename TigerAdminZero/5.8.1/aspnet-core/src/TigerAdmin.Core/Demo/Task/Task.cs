@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace TigerAdmin.Demo.Task
+namespace TigerAdmin.Demo
 {
     [Table("AppTasks")]
     public class Task : Entity<int>, IHasCreationTime
