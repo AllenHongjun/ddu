@@ -1,7 +1,9 @@
 ﻿using Abp.Domain.Entities.Auditing;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using TigerAdmin.Teaching.Lessons;
 
 namespace TigerAdmin.Teaching.Missions
 {
@@ -22,6 +24,11 @@ namespace TigerAdmin.Teaching.Missions
         public MissionType Type { get; set; }
 
         public string VideoLink { get; set; }
+
+        public Guid LessonId { get; set; }
+
+        [ForeignKey("LessonId")]
+        public virtual Lesson Lesson { get; set; }
     }
 
     public enum MissionType
