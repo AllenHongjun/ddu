@@ -32,4 +32,6 @@
     <ProjectReference Include="..\TigerAdmin.EntityFrameworkCore.DbMigrations\TigerAdmin.EntityFrameworkCore.DbMigrations.csproj" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
 </Project>
